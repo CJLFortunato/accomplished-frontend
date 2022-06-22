@@ -206,3 +206,17 @@ button {
 }
 
 /*================================================================= Dashboard Component*/
+
+.dashboard {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+    height: 90vh;
+    background-color: white;
+
+}
