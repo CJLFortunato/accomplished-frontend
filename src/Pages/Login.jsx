@@ -23,13 +23,13 @@ export function Login() {
     return (
         <div className='login'>
             <section className="heading">
-                <h1><i class="fa-solid fa-right-to-bracket"></i> Login</h1>
+                <h1><i className="fa-solid fa-right-to-bracket"></i> Login</h1>
                 <p>Please login to your account</p>
             </section>
             <form onSubmit={onSubmit}>
-                <label for="email">Enter your email</label>
+                <label htmlFor="email">Enter your email</label>
                 <input type="email" id="email" name="email" value={email} onChange={onChange} placeholder="Your email" />
-                <label for="password">Enter your password</label>
+                <label htmlFor="password">Enter your password</label>
                 <input type="password" id="password" name="password" value={password} onChange={onChange} placeholder="Your password" />
                 <input type="submit" value="submit" />
             </form>
