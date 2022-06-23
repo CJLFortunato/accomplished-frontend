@@ -208,7 +208,7 @@ button {
 /*================================================================= Dashboard Component*/
 
 .dashboard {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -298,4 +298,9 @@ button {
 
 .goal-item p {
     font-style: italic;
+}
+
+.close {
+    color: red;
+    font-size: 1rem;
 }
