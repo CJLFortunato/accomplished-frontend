@@ -66,17 +66,59 @@ export function Register() {
                 <h1><i className="fa-solid fa-user"></i> Register</h1>
                 <p>Please create an account</p>
             </section>
-            <form onSubmit={onSubmit}>
-                <label htmlFor="name">Enter your name</label>
-                <input type="text" id="name" name="name" value={name} onChange={onChange} placeholder="Your name" />
-                <label htmlFor="email">Enter your email</label>
-                <input type="email" id="email" name="email" value={email} onChange={onChange} placeholder="Your email" />
-                <label htmlFor="password">Enter your password</label>
-                <input type="password" id="password" name="password" value={password} onChange={onChange} placeholder="Your password" />
-                <label htmlFor="password2">Confirm your password</label>
-                <input type="password" id="password2" name="password2" value={password2} onChange={onChange} placeholder="Confirm your password" />
-                <input type="submit" value="submit" />
-            </form>
+            <section className='form'>
+                <form onSubmit={onSubmit}>
+                    <div className='form-group'>
+                        <input
+                            type='text'
+                            className='form-control'
+                            id='name'
+                            name='name'
+                            value={name}
+                            placeholder='Enter your name'
+                            onChange={onChange}
+                        />
+                    </div>
+                    <div className='form-group'>
+                        <input
+                            type='email'
+                            className='form-control'
+                            id='email'
+                            name='email'
+                            value={email}
+                            placeholder='Enter your email'
+                            onChange={onChange}
+                        />
+                    </div>
+                    <div className='form-group'>
+                        <input
+                            type='password'
+                            className='form-control'
+                            id='password'
+                            name='password'
+                            value={password}
+                            placeholder='Enter password'
+                            onChange={onChange}
+                        />
+                    </div>
+                    <div className='form-group'>
+                        <input
+                            type='password'
+                            className='form-control'
+                            id='password2'
+                            name='password2'
+                            value={password2}
+                            placeholder='Confirm password'
+                            onChange={onChange}
+                        />
+                    </div>
+                    <div className='form-group'>
+                        <button type='submit' className='btn btn-block'>
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </section>
         </div>
     )
 }

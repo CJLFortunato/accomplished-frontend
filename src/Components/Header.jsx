@@ -25,7 +25,7 @@ export function Header() {
             <ul>
                 {user ? (
                     <li>
-                        <button onClick={onLogout}>
+                        <button onClick={onLogout} className='btn'>
                             <i className="fa-solid fa-right-from-bracket"></i>
                             Logout
                         </button>

@@ -1,177 +1,213 @@
-body {
-    background-color: blanchedalmond;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --primary-color: orange;
+    --secondary-color: rgb(255, 220, 156);
 }
 
-/*================================================================= Header Component*/
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover,
+a:active {
+    color: rgb(0, 174, 255);
+}
+
+p {
+    line-height: 1.7;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    line-height: 2.2;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
 
 header {
-    background-color: goldenrod;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 1%;
-    height: 4rem;
+    border-bottom: 1px solid var(--secondary-color);
+    margin-bottom: 60px;
 }
 
 header ul {
-    /* border: 1px solid black; */
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
     align-items: center;
-    width: 30%;
+    justify-content: space-between;
 }
 
 header ul li {
-    /* border: 1px solid black; */
-    list-style-type: none;
-
+    margin-left: 20px;
 }
 
-header a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.5rem;
-}
-
-header i {
-    margin-right: 10px;
-}
-
-button {
-    background-color: transparent;
-    color: white;
-    border: none;
-    font-size: 1.5rem;
-}
-
-/*================================================================= Register Component*/
-
-.register {
-    /* border: 1px solid red; */
+header ul li a {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
-    padding: 1%;
-    width: 80%;
+}
+
+header ul li a:hover {
+    color: rgb(0, 174, 255);
+
+}
+
+header ul li a svg {
+    margin-right: 5px;
+}
+
+.heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    padding: 0 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.heading p {
+    color: rgb(0, 174, 255);
+}
+
+.goals {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 120px;
+    gap: 10px;
+}
+
+.goal {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 2%;
+    position: relative;
+    border-width: 1px 2px 2px 1px;
+    border-style: solid;
+    border-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+.goal p {
+    font-style: italic;
+    color: grey;
+}
+
+.goal h2 {
+    font-size: 2rem;
+}
+
+.goal .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.form,
+.content {
+    width: 50%;
     margin: 0 auto;
-    height: 90vh;
-    background-color: white;
-
 }
 
-.register .heading {
-    /* border: 1px solid blue; */
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 1rem;
-    font-size: larger;
-    background-color: rgb(252, 229, 170);
-}
-
-.register .heading h1,
-.register .heading p {
-    margin: 5px;
-}
-
-.register form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 1%;
-    width: 40%;
-}
-
-.register form label {
-    margin: 1rem 0 .8rem 0;
-    font-size: 1.2rem;
-}
-
-.register form input {
-    width: 100%;
-    height: 3rem;
-    font-size: 1.2rem;
-}
-
-.register form input[type="submit"] {
-    margin: 2rem 0;
-    height: 2.5rem;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    background-color: goldenrod;
-}
-
-/*================================================================= Login Component*/
-
-.login {
-    /* border: 1px solid red; */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 1%;
-    width: 80%;
+form {
+    width: 70%;
     margin: 0 auto;
-    height: 90vh;
-    background-color: white;
-
 }
 
-.login .heading {
-    /* border: 1px solid blue; */
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 1rem;
-    font-size: larger;
-    background-color: rgb(252, 229, 170);
+.form-group {
+    margin-bottom: 10px;
 }
 
-.login .heading h1,
-.login .heading p {
-    margin: 5px;
-}
-
-.login form {
-    /* border: 1px solid blue; */
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 1%;
-}
-
-.login form label {
-    margin: 1rem 0 .8rem 0;
-    font-size: 1.2rem;
-}
-
-.login form input {
+.form-group input,
+.form-group textarea,
+.form-group select {
     width: 100%;
-    height: 3rem;
-    font-size: 1.2rem;
-}
-
-.login form input[type="submit"] {
-    margin: 2rem 0;
-    height: 2.5rem;
-    border: none;
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
     border-radius: 5px;
-    color: white;
-    background-color: goldenrod;
+    margin-bottom: 10px;
+    font-family: inherit;
 }
 
-/*================================================================= Spinner Component*/
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border: 2px solid rgb(0, 174, 255);
+    outline: 2px solid rgb(0, 174, 255);
+}
+
+.form-group label {
+    text-align: left;
+    display: block;
+    margin: 0 0 5px 3px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    appearance: button;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn svg {
+    margin-right: 8px;
+}
+
+.btn-reverse {
+    background: #fff;
+    color: var(--primary-color);
+}
+
+.btn-block {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+    transform: scale(0.98);
+    background-color: rgb(0, 174, 255);
+    border: 1px solid rgb(0, 174, 255);
+}
 
 .loadingSpinnerContainer {
     position: fixed;
@@ -190,7 +226,7 @@ button {
     width: 64px;
     height: 64px;
     border: 8px solid;
-    border-color: #000 transparent #555 transparent;
+    border-color: var(--primary-color) transparent var(--secondary-color) transparent;
     border-radius: 50%;
     animation: spin 1.2s linear infinite;
 }
@@ -205,102 +241,16 @@ button {
     }
 }
 
-/*================================================================= Dashboard Component*/
+@media (max-width: 600px) {
+    .form {
+        width: 90%;
+    }
 
-.dashboard {
-    /* border: 1px solid red; */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 1%;
-    width: 80%;
-    margin: 0 auto;
-    height: 90vh;
-    background-color: white;
+    .heading h1 {
+        font-size: 2rem;
+    }
 
-}
-
-.dashboard .heading {
-    /* border: 1px solid blue; */
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 1rem;
-    font-size: larger;
-    background-color: rgb(252, 229, 170);
-}
-
-.dashboard .heading h1,
-.dashboard .heading p {
-    margin: 5px;
-}
-
-.dashboard .form {
-    /* border: 1px solid blue; */
-    width: 40%;
-
-}
-
-.form form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 1%;
-}
-
-.form form label {
-    margin: 1rem 0 .8rem 0;
-    font-size: 1.3rem;
-}
-
-.form form input {
-    width: 100%;
-    height: 3rem;
-    font-size: 1.2rem;
-}
-
-.dashboard .form button[type="submit"] {
-    margin: 2rem 0;
-    height: 2.5rem;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    background-color: goldenrod;
-}
-
-.content {
-    width: 100%;
-}
-
-.goals {
-    /* border: 1px solid blue; */
-    width: 100%;
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
-    grid-auto-rows: 100px;
-    gap: 1rem;
-}
-
-.goal-item {
-    border: 2px solid goldenrod;
-    border-radius: 15px 0 15px 0;
-    padding: 2%;
-}
-
-.goal-item p,
-.goal-item h2 {
-    margin: 5px;
-}
-
-.goal-item p {
-    font-style: italic;
-}
-
-.close {
-    color: red;
-    font-size: 1rem;
+    .heading p {
+        font-size: 1.5rem;
+    }
 }

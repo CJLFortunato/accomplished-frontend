@@ -18,9 +18,14 @@ export function GoalForm() {
   return (
     <section className="form">
       <form onSubmit={onSubmit}>
-        <label htmlFor="title">Goal</label>
-        <input type="text" name="title" id="title" value={text} onChange={(e) => setText(e.target.value)} placeholder="Type your goal here" />
-        <button type="submit">Add goal</button>
+        <div className="form-group">
+          <label htmlFor="title">Goal</label>
+          <input type="text" name="title" id="title" value={text} onChange={(e) => setText(e.target.value)} placeholder="Type your goal here" />
+        </div>
+        <div className="form-group">
+          <button type="submit" className='btn btn-block'>Add goal</button>
+        </div>
+
       </form>
     </section>
   )
