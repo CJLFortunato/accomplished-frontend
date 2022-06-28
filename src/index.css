@@ -16,6 +16,7 @@ body {
 a {
     text-decoration: none;
     color: var(--primary-color);
+    font-size: 1.5rem;
 }
 
 a:hover,
@@ -56,8 +57,11 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1%;
-    border-bottom: 1px solid var(--secondary-color);
-    margin-bottom: 60px;
+    /* border-bottom: 1px solid var(--secondary-color); */
+    /* margin-bottom: 60px; */
+    background-color: #fff;
+    box-shadow: 3px 3px 10px 5px hsla(0, 0%, 0%, .2);
+    z-index: 20;
 }
 
 header ul {
@@ -67,12 +71,13 @@ header ul {
 }
 
 header ul li {
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
 header ul li a {
     display: flex;
     align-items: center;
+    font-size: 1.5rem;
 }
 
 header ul li a:hover {
@@ -80,8 +85,81 @@ header ul li a:hover {
 
 }
 
+.App {
+    background-image: url('./marcos-rivas-496Nw45mkg4-unsplash.jpg');
+    height: 100vh;
+    background-size: cover;
+}
+
+.welcome {
+    /* border: 1px solid blue; */
+    background-color: #fff;
+    box-shadow: 3px 3px 10px 5px hsla(0, 0%, 0%, .2);
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1%;
+    height: 60vh;
+    position: relative;
+    top: 7rem;
+    border-radius: 18px;
+}
+
+.welcome h1 {
+    font-size: 4rem;
+    margin: 1rem 0 2rem 0;
+}
+
+.welcome p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.links-ctn {
+    margin: 2rem;
+    /* border: 1px solid blue; */
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.links-ctn a {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2% 3%;
+    border-radius: 10px;
+    font-size: 2rem;
+}
+
+.links-ctn a:hover {
+    background-color: rgb(0, 174, 255);
+    color: white;
+    padding: 2% 3%;
+    border-radius: 10px;
+    font-size: 2rem;
+}
+
 header ul li a svg {
     margin-right: 5px;
+}
+
+.login,
+.register {
+    background-color: #fff;
+    box-shadow: 0px 15px 10px 5px hsla(0, 0%, 0%, .2);
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1%;
+    height: 90vh;
+
 }
 
 .heading {

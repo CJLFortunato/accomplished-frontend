@@ -20,7 +20,7 @@ export function Dashboard() {
             console.log(message);
         }
         if (!user) {
-            navigate('/login');
+            navigate('/');
         }
         dispatch(getGoals());
 
