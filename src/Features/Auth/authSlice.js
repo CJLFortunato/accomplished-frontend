@@ -5,7 +5,7 @@ import {
 
 import authService from './authService';
 
-console.log(localStorage.getItem('user'));
+// console.log(localStorage.getItem('user'));
 
 const user = JSON.parse(localStorage.getItem('user'));
 
@@ -27,7 +27,7 @@ export const register = createAsyncThunk('auth/register', async (user, thunkAPI)
 })
 
 export const login = createAsyncThunk('auth/login', async (user, thunkAPI) => {
-    
+
     try {
         return await authService.login(user);
     } catch (error) {
