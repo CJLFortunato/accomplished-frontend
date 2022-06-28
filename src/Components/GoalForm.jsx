@@ -19,7 +19,7 @@ export function GoalForm() {
     <section className="form">
       <form onSubmit={onSubmit}>
         <div className="form-group">
-          <label htmlFor="title">Goal</label>
+          <label htmlFor="title">Add A Goal</label>
           <input type="text" name="title" id="title" value={text} onChange={(e) => setText(e.target.value)} placeholder="Type your goal here" />
         </div>
         <div className="form-group">

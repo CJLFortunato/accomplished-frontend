@@ -37,7 +37,6 @@ export function Dashboard() {
         <div className='dashboard'>
             <section className="heading">
                 <h1>Welcome {user && user.name}</h1>
-                <p>Goals dashboard</p>
             </section>
             <GoalForm />
             <section className="content">
