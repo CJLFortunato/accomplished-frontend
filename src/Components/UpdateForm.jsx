@@ -18,7 +18,7 @@ export function UpdateForm(props) {
         <section className="form">
             <form onSubmit={onSubmit}>
                 <div className="form-group">
-                    <label htmlFor="title">Add A Goal</label>
+                    <label htmlFor="title">Update your achievement</label>
                     <input type="text" name="title" id="title" value={text} onChange={(e) => setText(e.target.value)} />
                 </div>
                 <div className="form-group">
@@ -26,6 +26,7 @@ export function UpdateForm(props) {
                 </div>
 
             </form>
+            <button onClick={() => props.closeFunc(false)} className="close-update">Close</button>
         </section>
     )
 }
