@@ -7,7 +7,6 @@ const register = async (userData) => {
         headers: {
             "Access-Control-Allow-Headers": "Content-Type",
             "Content-Type": "application/json",
-            "Access-Control-Allow-Origin": "https://accomplished.netlify.app/",
             "Origin": "https://accomplished.netlify.app/"
         },
         body: JSON.stringify(userData)
@@ -29,7 +28,6 @@ const login = async (userData) => {
         headers: {
             "Access-Control-Allow-Headers": "Content-Type",
             "Content-Type": "application/json",
-            "Access-Control-Allow-Origin": "https://accomplished.netlify.app/",
             "Origin": "https://accomplished.netlify.app/"
         },
         body: JSON.stringify(userData)
