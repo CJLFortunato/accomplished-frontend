@@ -6,7 +6,7 @@ const register = async (userData) => {
         mode: 'cors',
         headers: {
             'Content-type': 'application/json',
-            'Access-Control-Allow-Origin': 'http://localhost:3000/',
+            'Access-Control-Allow-Origin': 'https://accomplished.netlify.app/',
         },
         body: JSON.stringify(userData)
     });
@@ -26,7 +26,7 @@ const login = async (userData) => {
         mode: 'cors',
         headers: {
             'Content-type': 'application/json',
-            'Access-Control-Allow-Origin': 'http://localhost:3000/',
+            'Access-Control-Allow-Origin': 'https://accomplished.netlify.app/',
         },
         body: JSON.stringify(userData)
     });

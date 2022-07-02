@@ -6,7 +6,7 @@ const createGoal = async (goalData, token) => {
         mode: 'cors',
         headers: {
             'Content-type': 'application/json',
-            'Access-Control-Allow-Origin': 'http://localhost:3000/',
+            'Access-Control-Allow-Origin': 'https://accomplished.netlify.app/',
             'Authorization': `Bearer ${token}`
         },
         body: JSON.stringify(goalData)
@@ -26,7 +26,7 @@ const getGoals = async (token) => {
         mode: 'cors',
         headers: {
             'Content-type': 'application/json',
-            'Access-Control-Allow-Origin': 'http://localhost:3000/',
+            'Access-Control-Allow-Origin': 'https://accomplished.netlify.app/',
             'Authorization': `Bearer ${token}`
         }
     });
@@ -45,7 +45,7 @@ const deleteGoal = async (id, token) => {
         mode: 'cors',
         headers: {
             'Content-type': 'application/json',
-            'Access-Control-Allow-Origin': 'http://localhost:3000/',
+            'Access-Control-Allow-Origin': 'https://accomplished.netlify.app/',
             'Authorization': `Bearer ${token}`
         }
     });
@@ -64,7 +64,7 @@ const updateGoal = async (goalData, token) => {
         mode: 'cors',
         headers: {
             'Content-type': 'application/json',
-            'Access-Control-Allow-Origin': 'http://localhost:3000/',
+            'Access-Control-Allow-Origin': 'https://accomplished.netlify.app/',
             'Authorization': `Bearer ${token}`
         },
         body: JSON.stringify(goalData)
