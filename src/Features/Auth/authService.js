@@ -5,9 +5,7 @@ const register = async (userData) => {
         method: "POST",
         mode: 'cors',
         headers: {
-            'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': 'https://accomplished.netlify.app/',
-            'Origin': 'https://accomplished.netlify.app/'
+            'Content-Type': 'application/json'
         },
         body: JSON.stringify(userData)
     });
@@ -26,9 +24,7 @@ const login = async (userData) => {
         method: "POST",
         mode: 'cors',
         headers: {
-            'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': 'https://accomplished.netlify.app/',
-            'Origin': 'https://accomplished.netlify.app/'
+            'Content-Type': 'application/json'
         },
         body: JSON.stringify(userData)
     });
