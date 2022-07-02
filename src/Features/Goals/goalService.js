@@ -5,7 +5,7 @@ const createGoal = async (goalData, token) => {
         method: "POST",
         mode: 'cors',
         headers: {
-            'Content-type': 'application/json',
+            'Content-Type': 'application/json',
             'Access-Control-Allow-Origin': 'https://accomplished.netlify.app/',
             'Authorization': `Bearer ${token}`
         },
@@ -25,7 +25,7 @@ const getGoals = async (token) => {
         method: "GET",
         mode: 'cors',
         headers: {
-            'Content-type': 'application/json',
+            'Content-Type': 'application/json',
             'Access-Control-Allow-Origin': 'https://accomplished.netlify.app/',
             'Authorization': `Bearer ${token}`
         }
@@ -44,7 +44,7 @@ const deleteGoal = async (id, token) => {
         method: "DELETE",
         mode: 'cors',
         headers: {
-            'Content-type': 'application/json',
+            'Content-Type': 'application/json',
             'Access-Control-Allow-Origin': 'https://accomplished.netlify.app/',
             'Authorization': `Bearer ${token}`
         }
@@ -63,7 +63,7 @@ const updateGoal = async (goalData, token) => {
         method: "PUT",
         mode: 'cors',
         headers: {
-            'Content-type': 'application/json',
+            'Content-Type': 'application/json',
             'Access-Control-Allow-Origin': 'https://accomplished.netlify.app/',
             'Authorization': `Bearer ${token}`
         },
