@@ -265,6 +265,7 @@ header ul li a svg {
 .content {
     overflow-y: scroll;
     height: 27rem;
+    border-top: 1px solid rgb(0, 174, 255);
 }
 
 .content::-webkit-scrollbar {
