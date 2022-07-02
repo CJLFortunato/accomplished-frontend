@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5000/api/users/';
+const API_URL = 'https://accomplished-backend.herokuapp.com/api/users/';
 
 const register = async (userData) => {
     const res = await fetch(API_URL, {
@@ -33,14 +33,14 @@ const login = async (userData) => {
 
     if (res.ok) {
         const jsonRes = await res.json();
-        console.log(jsonRes);
+        //console.log(jsonRes);
         localStorage.setItem('user', JSON.stringify(jsonRes));
         return jsonRes;
     }
 }
 
 const logout = () => {
-    console.log('removed from localstorage');
+    // console.log('removed from localstorage');
     localStorage.removeItem('user');
 }
 

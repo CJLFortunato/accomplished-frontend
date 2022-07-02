@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5000/api/goals/';
+const API_URL = 'https://accomplished-backend.herokuapp.com/api/goals/';
 
 const createGoal = async (goalData, token) => {
     const res = await fetch(API_URL, {
